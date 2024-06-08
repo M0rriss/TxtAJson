@@ -18,7 +18,7 @@ public class FileConvert : IFileConvert
             if (linea.StartsWith("D110"))
             {
                 string DNI = linea.Substring(62, 8);
-                string completeName = EliminarSpaciado(linea.Substring(74, 116));
+                string completeName = EliminarSpaciado(linea.Substring(74, 116).ToUpper());
                 string year = linea.Substring(548, 4);
                 string month = linea.Substring(552, 2);
                 string day = linea.Substring(554, 2);

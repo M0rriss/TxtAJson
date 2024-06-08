@@ -11,7 +11,7 @@ namespace App.Controllers
     /// La clase anterior es una clase de controlador de C# llamada FileController que maneja solicitudes
     /// de API relacionadas con archivos.
     /// </summary>
-        [Route("api/[controller]")]
+    [Route("api/[controller]")]
     [ApiController]
     
     public class FileController : ControllerBase
